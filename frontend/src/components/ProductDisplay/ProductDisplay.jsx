@@ -11,7 +11,7 @@ export default function ProductDisplay({product}) {
   }, [product]);
   
   const { addtoCart } = useContext(ShopContext);
-  const url="http://localhost:6004"
+  const url="https://fullstack-ecommerce-app-gw43.onrender.com"
 
   return (
     <div className='productdisplay'>
