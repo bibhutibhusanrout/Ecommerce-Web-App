@@ -16,7 +16,7 @@ const ListProduct = () => {
   }, [])
   
   const removeiconhandler = async(id)=>{
-    await fetch('http://localhost:6004/removeproduct',{
+    await fetch('https://fullstack-ecommerce-app-gw43.onrender.com/removeproduct',{
       method:'POST',
       headers:{
         Accept:'application/json',
