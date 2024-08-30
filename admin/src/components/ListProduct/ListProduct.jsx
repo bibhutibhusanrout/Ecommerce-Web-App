@@ -7,7 +7,7 @@ const ListProduct = () => {
   const [allProducts, setallProducts] = useState([])
 
   const fetchinfo = async()=>{
-    await fetch('http://localhost:6004/allproducts')
+    await fetch('https://fullstack-ecommerce-app-gw43.onrender.com/allproducts')
     .then((res)=>res.json())
     .then((data)=>{setallProducts(data)})
   }
@@ -28,7 +28,7 @@ const ListProduct = () => {
     console.log(id);
     await fetchinfo();
   }
-  const url="http://localhost:6004"
+  const url="https://fullstack-ecommerce-app-gw43.onrender.com"
   
   return (
     <div className='list-product'>
