@@ -7,7 +7,7 @@ export default function Popular() {
   const [popularproducts, setpopularproducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:6004/popularwomen")
+    fetch("https://fullstack-ecommerce-app-gw43.onrender.com/popularwomen")
     .then((res)=>res.json())
     .then((data)=>setpopularproducts(data));
   }, [])
