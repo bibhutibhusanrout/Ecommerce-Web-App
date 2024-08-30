@@ -42,7 +42,7 @@ const AddProduct = () => {
       product.image = responseData.image_url;
       console.log(product);
 
-      await fetch("http://localhost:6004/addproduct", {
+      await fetch("https://fullstack-ecommerce-app-gw43.onrender.com/addproduct", {
         method: "POST",
         headers: {
           Accept: "application/json",
