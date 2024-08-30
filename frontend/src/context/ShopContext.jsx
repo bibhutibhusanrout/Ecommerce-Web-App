@@ -17,7 +17,7 @@ export default function ShopContextProvider(props) {
     const [all_product, setall_product] = useState([]);
     const [cartItems, setcartItems] = useState(getDefaultCart());
     const [count, setcount] = useState(0);
-    const url="http://localhost:6004"
+    const url="https://fullstack-ecommerce-app-gw43.onrender.com"
 
     useEffect(() => {
         let sum = 0;
