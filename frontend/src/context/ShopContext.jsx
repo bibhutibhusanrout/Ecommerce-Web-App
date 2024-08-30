@@ -32,7 +32,7 @@ export default function ShopContextProvider(props) {
 
 
     useEffect(() => {
-        fetch("http://localhost:6004/allproducts")
+        fetch("https://fullstack-ecommerce-app-gw43.onrender.com/allproducts")
             .then((res) => res.json())
             .then((product) => {
                 setall_product(product)
@@ -40,7 +40,7 @@ export default function ShopContextProvider(props) {
             })
 
         if (localStorage.getItem("auth-token")) {
-            fetch("http://localhost:6004/getcart",{
+            fetch("https://fullstack-ecommerce-app-gw43.onrender.com/getcart",{
                 method: "POST",
                 headers: {
                     Accept: "application/form-data",
@@ -62,7 +62,7 @@ export default function ShopContextProvider(props) {
 
         setcartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }))
         if (localStorage.getItem("auth-token")) {
-            fetch("http://localhost:6004/addtocart", {
+            fetch("https://fullstack-ecommerce-app-gw43.onrender.com/addtocart", {
                 method: "POST",
                 headers: {
                     Accept: "application/formData",
@@ -79,7 +79,7 @@ export default function ShopContextProvider(props) {
         setcartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }))
 
         if (localStorage.getItem("auth-token")) {
-            fetch("http://localhost:6004/removefromcart", {
+            fetch("https://fullstack-ecommerce-app-gw43.onrender.com/removefromcart", {
                 method: "POST",
                 headers: {
                     Accept: "application/formData",
