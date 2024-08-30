@@ -27,7 +27,7 @@ const AddProduct = () => {
     let formData = new FormData();
     formData.append("product", image);
 
-    await fetch("http://localhost:6004/upload", {
+    await fetch("https://fullstack-ecommerce-app-gw43.onrender.com/upload", {
       method: "POST",
       headers: {
         Accept: "application/json",
