@@ -6,7 +6,7 @@ import remove_icon from "../Assets/cart_cross_icon.png"
 export default function CartItems() {
 
     const { getTotalcartAmount, all_product, cartItems, removeFromCart } = useContext(ShopContext);
-    const url="http://localhost:6004";
+    const url="https://fullstack-ecommerce-app-gw43.onrender.com";
 
     return (
         <div className='cartitems'>
