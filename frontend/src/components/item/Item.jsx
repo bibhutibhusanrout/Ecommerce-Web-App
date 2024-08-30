@@ -3,7 +3,7 @@ import "./Item.css"
 import { Link } from 'react-router-dom'
 
 export default function Item(props) {
-  const url="http://localhost:6004"
+  const url="https://fullstack-ecommerce-app-gw43.onrender.com"
   return (
     <div className='item'>
       <Link to={`/product/${props.id}`}><img onClick={window.scrollTo(0,0)} src={url+'/images/'+props.image} alt="" /></Link>
