@@ -17,7 +17,7 @@ export default function Login() {
   const login = async ()=>{
     console.log("login")
     let responsedata;
-    await fetch("http://localhost:6004/login",{
+    await fetch("https://fullstack-ecommerce-app-gw43.onrender.com/login",{
       method:"POST",
       headers:{
         Accept:"application/json",
@@ -40,7 +40,7 @@ export default function Login() {
   const signup = async ()=>{
     console.log("signup")
     let responsedata;
-    await fetch("http://localhost:6004/signup",{
+    await fetch("https://fullstack-ecommerce-app-gw43.onrender.com/signup",{
       method:"POST",
       headers:{
         Accept:"application/json",
