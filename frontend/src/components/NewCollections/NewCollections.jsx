@@ -8,7 +8,7 @@ export default function NewCollections() {
   const [new_collection, setnew_collection] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:6004/newcollections")
+    fetch("https://fullstack-ecommerce-app-gw43.onrender.com/newcollections")
     .then((res)=>res.json())
     .then((data)=>setnew_collection(data));
   }, [])
